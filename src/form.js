@@ -67,7 +67,7 @@ class Form extends React.Component {
 		const buttonClass = classNames('button', 'success', { 'animate': submitting })
 		return (
 			<section className="form">
-				<h2 className="form__header">Kendra + André invite you to reserve <span>October 3rd, 2020</span> to join them in celebrating their wedding in <span>Honeywood, Ontario</span>.</h2>
+				<h2 className="form__header">Kendra + André invite you to reserve <span>September 25<sup>th</sup>, 2021</span> to join them in celebrating their wedding in <span>Honeywood, Ontario</span>.</h2>
 				<h2>Please enter your mailing address and the names of each attending guest for the formal invitation.</h2>
 				<form onSubmit={this.handleSubmit}>
 					<label>Attending Guest(s)*
