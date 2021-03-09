@@ -63,7 +63,6 @@ class Form extends React.Component {
 	}
 
 	render() {
-		console.log(process.env);
 		const { value, submitting, error } = this.state;
 		const buttonClass = classNames('button', 'success', { 'animate': submitting })
 		return (
