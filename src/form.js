@@ -47,7 +47,7 @@ class Form extends React.Component {
 		this.setState({ submitting: true });
 		axios({
 			method: 'get',
-			url: 'https://script.google.com/macros/s/AKfycbznfveWEZ2s2fTLWksT-8DeMdmHC57jsQW0mAIyRq40EN5asmHy/exec',
+			url: `${process.env.REACT_APP_FORM_URL}`,
 			responseType: 'json',
 			params: {
 					attendingGuests,
@@ -63,6 +63,7 @@ class Form extends React.Component {
 	}
 
 	render() {
+		console.log(process.env);
 		const { value, submitting, error } = this.state;
 		const buttonClass = classNames('button', 'success', { 'animate': submitting })
 		return (
