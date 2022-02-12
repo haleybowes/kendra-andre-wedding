@@ -49,9 +49,6 @@ class Form extends React.Component {
 			method: 'get',
 			url: `${process.env.REACT_APP_FORM_URL}`,
 			responseType: 'json',
-			headers: {
-				"Access-Control-Allow-Origin": "https://script.google.com",
-			},
 			params: {
 					attendingGuests,
 					streetAddress,
