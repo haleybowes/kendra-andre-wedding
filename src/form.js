@@ -46,7 +46,7 @@ class Form extends React.Component {
 		e.preventDefault();
 		this.setState({ submitting: true });
 		axios({
-			method: 'get',
+			method: 'post',
 			url: `${process.env.REACT_APP_FORM_URL}`,
 			responseType: 'json',
 			headers: {
