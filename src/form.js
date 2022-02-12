@@ -46,11 +46,11 @@ class Form extends React.Component {
 		e.preventDefault();
 		this.setState({ submitting: true });
 		axios({
-			method: 'post',
+			method: 'get',
 			url: `${process.env.REACT_APP_FORM_URL}`,
 			responseType: 'json',
 			headers: {
-				"Access-Control-Allow-Origin": "*",
+				"Access-Control-Allow-Origin": "https://script.google.com",
 			},
 			params: {
 					attendingGuests,
@@ -116,7 +116,7 @@ class Form extends React.Component {
 					</label>
 					{
 						error &&
-						<p>Oops! Something went wrong while you were submitting the form. Please try again or send an email to <strong>sayhi@kendraandandre.com</strong>.</p>
+						<p>Oops! Something went wrong while you were submitting the form. Please refresh and try again.
 					}
 					<div className="animate submit">
 						{
