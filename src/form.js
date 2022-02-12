@@ -68,7 +68,7 @@ class Form extends React.Component {
 		return (
 			<section className="form">
 				<h2 className="form__header">Kendra + André invite you to reserve <span>June 11<sup>th</sup>, 2022</span> to join them in celebrating their wedding in <span>Honeywood, Ontario</span>.</h2>
-				<h2>Please enter your mailing address and the names of each attending guest for the formal invitation.</h2>
+				<h2 className="form__header">Please enter your mailing address and the names of each attending guest for the formal invitation.</h2>
 				<form onSubmit={this.handleSubmit}>
 					<label>Attending Guest(s)*
 						<input name="attendingGuests" type="text" value={value} onChange={this.handleInputChange} required />

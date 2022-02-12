@@ -19,8 +19,8 @@ h1, h2, span, input, label {
 }
 
 h2, input, select, p {
-	font-family: proxima-nova, serif;
-	font-weight: 400;
+	font-family: new-order, serif;
+	font-weight: 300;
 	font-style: normal;
 }
 
@@ -88,6 +88,10 @@ label {
 			margin-left: 5px;
 		}
 	}
+}
+
+.form_header {
+	padding: 0 50px 0;
 }
 
 .down-arrow {
