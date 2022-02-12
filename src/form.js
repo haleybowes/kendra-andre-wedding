@@ -49,6 +49,9 @@ class Form extends React.Component {
 			method: 'get',
 			url: `${process.env.REACT_APP_FORM_URL}`,
 			responseType: 'json',
+			headers: {
+				"Access-Control-Allow-Origin": "*",
+			},
 			params: {
 					attendingGuests,
 					streetAddress,
@@ -59,7 +62,7 @@ class Form extends React.Component {
 			}
 		})
 		.then(() => push('/thankyou'))
-		.catch(() => this.setState({ error: true }));
+		.catch(() => this.setState({ error: true, submitting: false }));
 	}
 
 	render() {
