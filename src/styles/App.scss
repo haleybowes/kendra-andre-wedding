@@ -20,15 +20,16 @@ h1, h2, span, input, label {
 
 h2, input, select, p {
 	font-family: new-order, serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
 }
 
 h2, p {
 	text-align: center;
+	font-size: 1.25rem;
 	
 	@media only all and (min-width: 768px) {
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 	}
 }
 
@@ -92,8 +93,6 @@ label {
 
 .form_header {
 	padding: 0 50px 0;
-	font-weight: 400;
-	font-size: 24px;
 }
 
 .down-arrow {
