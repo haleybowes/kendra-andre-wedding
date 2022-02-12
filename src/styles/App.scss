@@ -19,7 +19,7 @@ h1, h2, span, input, label {
 }
 
 h2, input, select, p {
-	font-family: miller-banner, serif;
+	font-family: proxima-nova, serif;
 	font-weight: 400;
 	font-style: normal;
 }
@@ -38,6 +38,8 @@ p {
 }
 
 h2 {
+	padding: 0 50px 0;
+
 	&:nth-of-type(1) {
 		margin-top: 0;
 	}
@@ -149,7 +151,7 @@ a {
 }
 
 span {
-	font-family: miller-banner, serif;
+	font-family: proxima-nova, serif;
 	font-weight: 800;
 }
 
