@@ -116,7 +116,7 @@ class Form extends React.Component {
 					</label>
 					{
 						error &&
-						<p>Oops! Something went wrong while you were submitting the form. Please refresh and try again.
+						<p>Oops! Something went wrong while you were submitting the form. Please refresh and try again.</p>
 					}
 					<div className="animate submit">
 						{
