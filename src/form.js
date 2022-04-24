@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import classNames from 'classnames';
 
 import './styles/App.scss';
@@ -47,7 +47,7 @@ class Form extends React.Component {
 		this.setState({ submitting: true });
 		axios({
 			method: 'get',
-			url: `${process.env.REACT_APP_FORM_URL}`,
+			url: 'https://script.google.com/macros/s/AKfycbznfveWEZ2s2fTLWksT-8DeMdmHC57jsQW0mAIyRq40EN5asmHy/exec',
 			responseType: 'json',
 			params: {
 					attendingGuests,
@@ -59,7 +59,7 @@ class Form extends React.Component {
 			}
 		})
 		.then(() => push('/thankyou'))
-		.catch(() => this.setState({ error: true, submitting: false }));
+		.catch(() => this.setState({ error: true }));
 	}
 
 	render() {
@@ -67,8 +67,28 @@ class Form extends React.Component {
 		const buttonClass = classNames('button', 'success', { 'animate': submitting })
 		return (
 			<section className="form">
-				<h2 className="form__header">Kendra + André invite you to reserve <span>June 11<sup>th</sup>, 2022</span> to join them in celebrating their wedding in <span>Honeywood, Ontario</span>.</h2>
-				<h2 className="form__header">Please enter your mailing address and the names of each attending guest for the formal invitation.</h2>
+				<p className="form__header">Kendra + André together with their families invite you to join us for our wedding on Saturday, June 11th 2022 AT 4PM at Unicamp of Ontario, <a href="https://www.google.com/maps/place/638159+Prince+of+Wales+Rd+W,+Mulmur,+ON+L0N+1H0/@44.21451,-80.1700187,17z/data=!3m1!4b1!4m5!3m4!1s0x882a5eb8e06766a1:0xe08a58c2118dc34c!8m2!3d44.21451!4d-80.16783">638159 Prince of Wales Rd, Mulmur ON L9V 0C5</a></p>
+				<div>
+					<h2>Saturday</h2>
+					<p>The Ceremony begins at 4pm</p>
+					<p>Cocktails and appetizers will be served following the ceremony at 4:30</p>
+					<p>Dinner will be served buffet style at 6:30</p>
+					<p>Speeches around the fire at 7:30</p>
+					<p>Band at 8:30</p>
+					<p>Bar closed at 12:00</p>
+				</div>
+				<div>
+					<h2>Sunday</h2>
+					<p>Sunday Brunch will be served at 9:30</p>
+					<p>Guests have checked out by 1:00</p>
+				</div>
+				<div>
+					<h2>All the details</h2>
+					<p>Kendra and Andre will be getting married outdoors.  This means guests should dress according to the days forecast and be prepared for mud, bugs and bad weather.  Think collared shirts, ties optional, and bring a rain coat just in case.</p>
+					<p>Unicamp is located on the Niagara Escarpment. There is a beach, direct access to the Bruce trail, and basketball courts.  We encourage our guests to enjoy being outdoors, bring their bathing suits and hiking gear and explore the area.</p>
+					<p>Weekend accommodations have been assigned, and details have been emailed to each guest.</p>
+					<p>Your presence at our wedding is the greatest gift of all. If you wish to contribute further, the couple would appreciate a donation to their honeymoon fund.</p>
+				</div>
 				<form onSubmit={this.handleSubmit}>
 					<label>Attending Guest(s)*
 						<input name="attendingGuests" type="text" value={value} onChange={this.handleInputChange} required />
@@ -113,7 +133,7 @@ class Form extends React.Component {
 					</label>
 					{
 						error &&
-						<p>Oops! Something went wrong while you were submitting the form. Please refresh and try again.</p>
+						<p>Oops! Something went wrong while you were submitting the form. Please try again or send an email to <strong>sayhi@kendraandandre.com</strong>.</p>
 					}
 					<div className="animate submit">
 						{
