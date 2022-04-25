@@ -4,7 +4,6 @@ import { withRouter } from "react-router-dom";
 import classNames from 'classnames';
 
 import './styles/App.scss';
-import downarrow from './images/down-arrow.svg'
 
 class Form extends React.Component {
 	constructor(props) {
@@ -107,7 +106,6 @@ class Form extends React.Component {
 								<option value="yes">Yes</option>
 								<option value="no">No</option>
 							</select>
-							<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
 						</label>
 						<label>If yes, how many will you be?
 							<input name="numberOfGuests" type="text" value={value} onChange={this.handleInputChange} />
@@ -125,7 +123,6 @@ class Form extends React.Component {
 								<option value="Just Saturday">Just Saturday</option>
 								<option value="Both Friday and Saturday night">Both Friday and Saturday night</option>
 							</select>
-							<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
 						</label>
 						<label>If you're around on Friday, will you be joining us for dinner?
 							<select
@@ -138,9 +135,7 @@ class Form extends React.Component {
 								<option value="yes">Yes</option>
 								<option value="no">No</option>
 							</select>
-							<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
 						</label>
-						
 						<label>
 							Do you have any food restrictions or allergies?
 							<input name="foodRestrictions" type="text" value={value} onChange={this.handleInputChange} required />
