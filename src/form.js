@@ -69,7 +69,7 @@ class Form extends React.Component {
 		const buttonClass = classNames('button', 'success', { 'animate': submitting })
 		return (
 			<section className="form">
-				<p className="form__header">Kendra + André together with their families invite you to join us for our wedding on Saturday, June 11th 2022 AT 4PM at Unicamp of Ontario, <a href="https://www.google.com/maps/place/638159+Prince+of+Wales+Rd+W,+Mulmur,+ON+L0N+1H0/@44.21451,-80.1700187,17z/data=!3m1!4b1!4m5!3m4!1s0x882a5eb8e06766a1:0xe08a58c2118dc34c!8m2!3d44.21451!4d-80.16783">638159 Prince of Wales Rd, Mulmur ON L9V 0C5</a>.</p>
+				<p className="form__header">We, together with our families, invite you to join us for our wedding on Saturday, June 11th 2022 AT 4PM at Unicamp of Ontario, <a href="https://www.google.com/maps/place/638159+Prince+of+Wales+Rd+W,+Mulmur,+ON+L0N+1H0/@44.21451,-80.1700187,17z/data=!3m1!4b1!4m5!3m4!1s0x882a5eb8e06766a1:0xe08a58c2118dc34c!8m2!3d44.21451!4d-80.16783">638159 Prince of Wales Rd, Mulmur ON L9V 0C5</a>.</p>
 				<div className="centered">
 					<h2>Saturday</h2>
 					<p>The Ceremony begins at 4pm</p>
@@ -86,8 +86,8 @@ class Form extends React.Component {
 				</div>
 				<div>
 					<h2 className="centered">All the details</h2>
-					<p>Kendra and Andre will be getting married outdoors.  This means guests should dress according to the days forecast and be prepared for mud, bugs and bad weather.  Think collared shirts, ties optional, and bring a rain coat just in case.</p>
-					<p>Unicamp is located on the Niagara Escarpment. There is a beach, direct access to the Bruce trail, and basketball courts.  We encourage our guests to enjoy being outdoors, bring their bathing suits and hiking gear and explore the area.</p>
+					<p>We will be getting married outdoors.  This means guests should dress according to the days forecast and be prepared for mud, bugs and bad weather.  We suggest collared shirts (ties optional), shoes that can tolerate uneven ground and bringing a rain jacket just in case.</p>
+					<p>Unicamp is a beautiful space located on the Niagara Escarpment. There is a beach, canoes, direct access to the Bruce Trail, forests and meadows for people to explore. If you’re staying over, bring your bathing suit and some active wear so you can enjoy it.</p>
 					<p>Weekend accommodations have been assigned, and details have been emailed to each guest.</p>
 					<p>Your presence at our wedding is the greatest gift of all. If you wish to contribute further, the couple would appreciate a donation to their honeymoon fund.</p>
 				</div>
