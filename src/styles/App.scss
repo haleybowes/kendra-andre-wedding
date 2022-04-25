@@ -40,29 +40,29 @@ form {
 	margin: 0 auto;
 }
 
-// label {
-// 	font-family: blenny, sans-serif;
-// 	position: relative;
-// 	display: flex;
-// 	flex-direction: column;
-// 	font-size: 1.2rem;
-// 	margin-bottom: 10px;
-// 	flex-basis: 100%;
-// 	cursor: url(./../images/fish-cursor.png) 32 32, auto;
+label {
+	font-family: blenny, sans-serif;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+	flex-basis: 100%;
+	cursor: url(./../images/fish-cursor.png) 32 32, auto;
 
-// 	&:nth-of-type(1) {
-// 		margin: 20px 0;
-// 	}
+	&:nth-of-type(1) {
+		margin: 20px 0;
+	}
 
-// 	@media only all and (min-width: 768px) {
-// 		flex-basis: 100%;
+	@media only all and (min-width: 768px) {
+		flex-basis: 100%;
 
-// 		&:nth-of-type(1),
-// 		&:nth-of-type(2) {
-// 			flex-basis: calc(50% - 20px);
-// 		}
-// 	}
-// }
+		&:nth-of-type(1),
+		&:nth-of-type(2) {
+			flex-basis: calc(50% - 20px);
+		}
+	}
+}
 
 .form_header {
 	padding: 0;
@@ -76,63 +76,63 @@ form {
 	}
 }
 
-// .down-arrow {
-// 	position: absolute;
-// 	width: 25px;
-// 	top: 45px;
-// 	right: 10px;
+.down-arrow {
+	position: absolute;
+	width: 25px;
+	top: 45px;
+	right: 10px;
 	
-// 	@media only all and (max-width: 425px) {
-// 		top: 51px;
-// 	}
-// }
+	@media only all and (max-width: 425px) {
+		top: 51px;
+	}
+}
 
-// select {
-// 	text-align: center;
-// 	height: 38px;
-// 	-webkit-appearance: none;
-// 	-moz-appearance: none;
+select {
+	text-align: center;
+	height: 38px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 
-// 	@media only all and (max-width: 425px) {
-// 		height: 43px;
-// 	}
+	@media only all and (max-width: 425px) {
+		height: 43px;
+	}
 
-// 	option {
-// 		text-transform: uppercase;
-// 		margin: 20px;
-// 		border-radius: 0;
-// 	}  
-// }
+	option {
+		text-transform: uppercase;
+		margin: 20px;
+		border-radius: 0;
+	}  
+}
 
-// div {
-// 	margin: 60px 0;
-// }
+div {
+	margin: 60px 0;
+}
 
-// .centered {
-// 	text-align: center;
-// }
+.centered {
+	text-align: center;
+}
 
-// textarea,
-// input[type="submit"] {
-// 	-webkit-appearance: none;
-// 	border-radius: 10px;
-// 	cursor: pointer;
-// }
+textarea,
+input[type="submit"] {
+	-webkit-appearance: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
 
-// input, select {
-// 	background: $white;
-// 	padding: 5px;
-// 	border: 2px solid $white;
-// 	font-size: 1.25rem; //20px
-// 	border-radius: 10px;
-// 	-webkit-appearance: none;
-// 	margin-top: 10px;
-// }
+input, select {
+	background: $white;
+	padding: 5px;
+	border: 2px solid $white;
+	font-size: 1.25rem; //20px
+	border-radius: 10px;
+	-webkit-appearance: none;
+	margin-top: 10px;
+}
 
-// input, select, .submit {
-// 	-webkit-appearance: none;
-// 	border-radius: 10px;
-// }
+input, select, .submit {
+	-webkit-appearance: none;
+	border-radius: 10px;
+}
 
 a {
 	color: $white;
