@@ -92,77 +92,80 @@ class Form extends React.Component {
 					<p>Weekend accommodations have been assigned, and details have been emailed to each guest.</p>
 					<p>Your presence at our wedding is the greatest gift of all. If you wish to contribute further, the couple would appreciate a donation to their honeymoon fund.</p>
 				</div>
-				<form onSubmit={this.handleSubmit}>
-					<label>We'll be there!
-						<select
-							name="attending"
-							value={value}
-							onChange={this.handleInputChange}
-							required
-							defaultValue=""
-						>
-							<option value="" disabled hidden></option>
-							<option value="yes">Yes</option>
-							<option value="no">No</option>
-						</select>
-						<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
-					</label>
-					<label>If yes, how many will you be?
-						<input name="numberOfGuests" type="text" value={value} onChange={this.handleInputChange} />
-					</label>
-					<label>How many nights will you be with us?
-						<select
-							name="howManyNights"
-							value={value}
-							onChange={this.handleInputChange}
-							required
-							defaultValue=""
-						>
-							<option value="" disabled hidden></option>
-							<option value="Just Friday">Just Friday</option>
-							<option value="Just Saturday">Just Saturday</option>
-							<option value="Both Friday and Saturday night">Both Friday and Saturday night</option>
-						</select>
-						<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
-					</label>
-					<label>If you're around on Friday, will you be joining us for dinner?
-						<select
-							name="fridayDinner"
-							value={value}
-							onChange={this.handleInputChange}
-							defaultValue=""
-						>
-							<option value="" disabled hidden></option>
-							<option value="yes">Yes</option>
-							<option value="no">No</option>
-						</select>
-						<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
-					</label>
-					
-					<label>
-						Do you have any food restrictions or allergies?
-						<input name="foodRestrictions" type="text" value={value} onChange={this.handleInputChange} required />
-					</label>
-					<label>
-						Do you have any questions or concerns for us?
-						<input name="additionalQuestions" type="text" value={value} onChange={this.handleInputChange} />
-					</label>
-					<label>
-						Song request
-						<input name="songRequest" type="text" value={value} onChange={this.handleInputChange} />
-					</label>
-					{
-						error &&
-						<p>Oops! Something went wrong while you were submitting the form. Please try again or send an email to <strong>sayhi@kendraandandre.com</strong>.</p>
-					}
-					<div className="animate submit">
+				<div>
+					<h2 className="centered">RSVP</h2>
+					<form onSubmit={this.handleSubmit}>
+						<label>We'll be there!
+							<select
+								name="attending"
+								value={value}
+								onChange={this.handleInputChange}
+								required
+								defaultValue=""
+							>
+								<option value="" disabled hidden></option>
+								<option value="yes">Yes</option>
+								<option value="no">No</option>
+							</select>
+							<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
+						</label>
+						<label>If yes, how many will you be?
+							<input name="numberOfGuests" type="text" value={value} onChange={this.handleInputChange} />
+						</label>
+						<label>How many nights will you be with us?
+							<select
+								name="howManyNights"
+								value={value}
+								onChange={this.handleInputChange}
+								required
+								defaultValue=""
+							>
+								<option value="" disabled hidden></option>
+								<option value="Just Friday">Just Friday</option>
+								<option value="Just Saturday">Just Saturday</option>
+								<option value="Both Friday and Saturday night">Both Friday and Saturday night</option>
+							</select>
+							<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
+						</label>
+						<label>If you're around on Friday, will you be joining us for dinner?
+							<select
+								name="fridayDinner"
+								value={value}
+								onChange={this.handleInputChange}
+								defaultValue=""
+							>
+								<option value="" disabled hidden></option>
+								<option value="yes">Yes</option>
+								<option value="no">No</option>
+							</select>
+							<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
+						</label>
+						
+						<label>
+							Do you have any food restrictions or allergies?
+							<input name="foodRestrictions" type="text" value={value} onChange={this.handleInputChange} required />
+						</label>
+						<label>
+							Do you have any questions or concerns for us?
+							<input name="additionalQuestions" type="text" value={value} onChange={this.handleInputChange} />
+						</label>
+						<label>
+							Song request
+							<input name="songRequest" type="text" value={value} onChange={this.handleInputChange} />
+						</label>
 						{
-							submitting
-								? <button className={buttonClass} />
-								: <input type="submit" value="Submit" className={buttonClass} />
+							error &&
+							<p>Oops! Something went wrong while you were submitting the form. Please try again or send an email to <strong>sayhi@kendraandandre.com</strong>.</p>
 						}
-					</div>
+						<div className="animate submit">
+							{
+								submitting
+									? <button className={buttonClass} />
+									: <input type="submit" value="Submit" className={buttonClass} />
+							}
+						</div>
 					</form>
+				</div>
 				</section>
 			);
 	}

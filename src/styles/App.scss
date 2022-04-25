@@ -93,8 +93,8 @@ label {
 .down-arrow {
 	position: absolute;
 	width: 25px;
-	top: 46px;
-	right: 5px;
+	top: 36px;
+	right: 10px;
 	
 	@media only all and (max-width: 425px) {
 		top: 51px;
@@ -140,6 +140,7 @@ input, select {
 	font-size: 1.25rem; //20px
 	border-radius: 2px;
 	-webkit-appearance: none;
+	margin-bottom: 10px;
 }
 
 input, select, .submit {
