@@ -119,9 +119,9 @@ class Form extends React.Component {
 							defaultValue=""
 						>
 							<option value="" disabled hidden></option>
-							<option value="Just Friday">Yes</option>
-							<option value="Just Saturday">No</option>
-							<option value="Both Friday and Saturday night">No</option>
+							<option value="Just Friday">Just Friday</option>
+							<option value="Just Saturday">Just Saturday</option>
+							<option value="Both Friday and Saturday night">Both Friday and Saturday night</option>
 						</select>
 						<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
 					</label>

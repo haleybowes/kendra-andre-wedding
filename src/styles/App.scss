@@ -14,10 +14,6 @@ section {
 	}
 }
 
-h1, h2, span, input, label {
-  color: $black;
-}
-
 h2, input, select, p {
 	font-family: new-order, serif;
 	font-weight: 400;
@@ -25,22 +21,10 @@ h2, input, select, p {
 }
 
 h2, p {
-	text-align: center;
 	font-size: 1.25rem;
 	
 	@media only all and (min-width: 768px) {
 		font-size: 1.5rem;
-	}
-}
-
-p {
-	margin-top: 40px;
-	margin-bottom: -10px;
-}
-
-h2 {
-	&:nth-of-type(1) {
-		margin-top: 0;
 	}
 }
 
@@ -173,11 +157,11 @@ header {
 	text-align: center;
 
 	img {
-		max-width: 100%;
+		max-width: 90%;
 		height: auto;
 
 		@media (min-width: 768px) {
-			max-width: 80%;
+			max-width: 50%;
 		}
 	}
 }
