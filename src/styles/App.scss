@@ -79,7 +79,7 @@ label {
 }
 
 a {
-	color: $text-light;
+	color: $white;
 }
 
 .form_header {
@@ -211,7 +211,7 @@ $button-width: 150px;
 $spinner-width: $button-width/6;
 $blue: #0076d3;
 $btn-bg: #8BC34A;
-$text-light: #fefefe;
+$white: #fefefe;
 
 .button {
 	background: $light-brown;
@@ -262,7 +262,7 @@ $text-light: #fefefe;
 		content: '';
 		width: $spinner-width;
 		height: $spinner-width;
-		border: 4px solid $text-light;
+		border: 4px solid $white;
 		border-radius: 50%;
 		border-left-color: transparent;
 		left: 50%;
@@ -285,7 +285,7 @@ $text-light: #fefefe;
 		content: '';
 		width: $spinner-width;
 		height: $spinner-width/2;
-		border: 4px solid $text-light;
+		border: 4px solid $white;
 		border-right: 0;
 		border-top: 0;
 		left: 50%;
