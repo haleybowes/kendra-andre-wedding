@@ -4,6 +4,7 @@ import Nav from './nav.js';
 
 const ThankYou = () => (
 	<section className="thank-you">
+		<Nav />
 		<div>
 			<h2>Thank you for your RSVP!</h2>
 			<p>We can't wait to celebrate with you.</p>
