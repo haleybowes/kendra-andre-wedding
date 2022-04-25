@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import classNames from 'classnames';
 
 import './styles/App.scss';
@@ -10,12 +10,13 @@ class Form extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			attendingGuests: '',
-			streetAddress: '',
-			apt: '',
-			city: '',
-			province: 'Province/Territory',
-			postalCode: '',
+			attending: '',
+			numberOfGuests: '',
+			howManyNights: '',
+			fridayDinner: '',
+			foodRestrictions: '',
+			additionalQuestions: '',
+			songRequest: '',
 			submitting: false,
 			error: false,
 		};
@@ -35,12 +36,13 @@ class Form extends React.Component {
 
 	handleSubmit(e) {
 		const {
-			attendingGuests,
-			streetAddress,
-			apt,
-			city,
-			province,
-			postalCode,
+			attending,
+			numberOfGuests,
+			howManyNights,
+			fridayDinner,
+			foodRestrictions,
+			additionalQuestions,
+			songRequest,
 		} = this.state;
 		const { history: { push } } = this.props;
 		e.preventDefault();
@@ -50,12 +52,13 @@ class Form extends React.Component {
 			url: 'https://script.google.com/macros/s/AKfycbznfveWEZ2s2fTLWksT-8DeMdmHC57jsQW0mAIyRq40EN5asmHy/exec',
 			responseType: 'json',
 			params: {
-					attendingGuests,
-					streetAddress,
-					apt,
-					city,
-					province,
-					postalCode,
+				attending,
+				numberOfGuests,
+				howManyNights,
+				fridayDinner,
+				foodRestrictions,
+				additionalQuestions,
+				songRequest,
 			}
 		})
 		.then(() => push('/thankyou'))
@@ -90,46 +93,63 @@ class Form extends React.Component {
 					<p>Your presence at our wedding is the greatest gift of all. If you wish to contribute further, the couple would appreciate a donation to their honeymoon fund.</p>
 				</div>
 				<form onSubmit={this.handleSubmit}>
-					<label>Attending Guest(s)*
-						<input name="attendingGuests" type="text" value={value} onChange={this.handleInputChange} required />
-					</label>
-					<label>
-						Street Address*
-						<input name="streetAddress" type="text" value={value} onChange={this.handleInputChange} required />
-					</label>
-					<label>Apt/Suite
-						<input name="apt" type="text" value={value} onChange={this.handleInputChange} />
-					</label>
-					<label>City*
-						<input name="city" type="text" value={value} onChange={this.handleInputChange} required />
-					</label>
-					<label>Province/Territory*
-					<select
-						name="province"
-						value={value}
-						onChange={this.handleInputChange}
-						required
-						defaultValue=""
-					>
-						<option value="" disabled hidden></option>
-						<option value="NL">NL</option>
-						<option value="PE">PE</option>
-						<option value="NS">NS</option>
-						<option value="NB">NB</option>
-						<option value="QC">QC</option>
-						<option value="ON">ON</option>
-						<option value="MB">MB</option>
-						<option value="SK">SK</option>
-						<option value="AB">AB</option>
-						<option value="BC">BC</option>
-						<option value="YT">YT</option>
-						<option value="NT">NT</option>
-						<option value="NU">NU</option>
+					<label>We'll be there!
+						<select
+							name="attending"
+							value={value}
+							onChange={this.handleInputChange}
+							required
+							defaultValue=""
+						>
+							<option value="" disabled hidden></option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
 						</select>
 						<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
 					</label>
-					<label>Postal Code*
-						<input name="postalCode" type="text" value={value} onChange={this.handleInputChange} required />
+					<label>If yes, how many will you be?
+						<input name="numberOfGuests" type="text" value={value} onChange={this.handleInputChange} />
+					</label>
+					<label>How many nights will you be with us?
+						<select
+							name="howManyNights"
+							value={value}
+							onChange={this.handleInputChange}
+							required
+							defaultValue=""
+						>
+							<option value="" disabled hidden></option>
+							<option value="Just Friday">Yes</option>
+							<option value="Just Saturday">No</option>
+							<option value="Both Friday and Saturday night">No</option>
+						</select>
+						<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
+					</label>
+					<label>If you're around on Friday, will you be joining us for dinner?
+						<select
+							name="fridayDinner"
+							value={value}
+							onChange={this.handleInputChange}
+							defaultValue=""
+						>
+							<option value="" disabled hidden></option>
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+						</select>
+						<img className="down-arrow" src={downarrow} alt="Drop down arrow" />
+					</label>
+					
+					<label>
+						Do you have any food restrictions or allergies?
+						<input name="foodRestrictions" type="text" value={value} onChange={this.handleInputChange} required />
+					</label>
+					<label>
+						Do you have any questions or concerns for us?
+						<input name="additionalQuestions" type="text" value={value} onChange={this.handleInputChange} />
+					</label>
+					<label>
+						Song request
+						<input name="songRequest" type="text" value={value} onChange={this.handleInputChange} />
 					</label>
 					{
 						error &&
