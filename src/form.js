@@ -70,8 +70,8 @@ class Form extends React.Component {
 		const buttonClass = classNames('button', 'success', { 'animate': submitting })
 		return (
 			<section className="form">
-				<p className="form__header">Kendra + André together with their families invite you to join us for our wedding on Saturday, June 11th 2022 AT 4PM at Unicamp of Ontario, <a href="https://www.google.com/maps/place/638159+Prince+of+Wales+Rd+W,+Mulmur,+ON+L0N+1H0/@44.21451,-80.1700187,17z/data=!3m1!4b1!4m5!3m4!1s0x882a5eb8e06766a1:0xe08a58c2118dc34c!8m2!3d44.21451!4d-80.16783">638159 Prince of Wales Rd, Mulmur ON L9V 0C5</a></p>
-				<div>
+				<p className="form__header">Kendra + André together with their families invite you to join us for our wedding on Saturday, June 11th 2022 AT 4PM at Unicamp of Ontario, <a href="https://www.google.com/maps/place/638159+Prince+of+Wales+Rd+W,+Mulmur,+ON+L0N+1H0/@44.21451,-80.1700187,17z/data=!3m1!4b1!4m5!3m4!1s0x882a5eb8e06766a1:0xe08a58c2118dc34c!8m2!3d44.21451!4d-80.16783">638159 Prince of Wales Rd, Mulmur ON L9V 0C5</a>.</p>
+				<div className="centered">
 					<h2>Saturday</h2>
 					<p>The Ceremony begins at 4pm</p>
 					<p>Cocktails and appetizers will be served following the ceremony at 4:30</p>
@@ -80,13 +80,13 @@ class Form extends React.Component {
 					<p>Band at 8:30</p>
 					<p>Bar closed at 12:00</p>
 				</div>
-				<div>
+				<div className="centered">
 					<h2>Sunday</h2>
 					<p>Sunday Brunch will be served at 9:30</p>
 					<p>Guests have checked out by 1:00</p>
 				</div>
 				<div>
-					<h2>All the details</h2>
+					<h2 className="centered">All the details</h2>
 					<p>Kendra and Andre will be getting married outdoors.  This means guests should dress according to the days forecast and be prepared for mud, bugs and bad weather.  Think collared shirts, ties optional, and bring a rain coat just in case.</p>
 					<p>Unicamp is located on the Niagara Escarpment. There is a beach, direct access to the Bruce trail, and basketball courts.  We encourage our guests to enjoy being outdoors, bring their bathing suits and hiking gear and explore the area.</p>
 					<p>Weekend accommodations have been assigned, and details have been emailed to each guest.</p>

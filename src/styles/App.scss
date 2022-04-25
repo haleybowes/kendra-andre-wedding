@@ -20,12 +20,17 @@ h2, input, select, p {
 	font-style: normal;
 }
 
-h2, p {
+p {
 	font-size: 1.25rem;
 	
 	@media only all and (min-width: 768px) {
 		font-size: 1.5rem;
 	}
+}
+
+h2 {
+	font-size: 2.5rem;
+	font-weight: bold;
 }
 
 form {
@@ -36,7 +41,7 @@ form {
 }
 
 label {
-	font-family: blenny, sans-serif;
+	// font-family: blenny, sans-serif;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -71,6 +76,10 @@ label {
 			margin-left: 5px;
 		}
 	}
+}
+
+a {
+	color: $text-light;
 }
 
 .form_header {
@@ -111,6 +120,14 @@ select {
 		margin: 20px;
 		border-radius: 0;
 	}  
+}
+
+div {
+	margin: 80px 0;
+}
+
+.centered {
+	text-align: center;
 }
 
 textarea,
@@ -209,7 +226,7 @@ $text-light: #fefefe;
 	transition: border-radius linear 0.05s, width linear 0.05s;
 	border: 1px solid $black;
 	letter-spacing: 5px;
-	font-family: bely-display, sans-serif;
+	font-family: blenny, sans-serif;;
 	font-size: 1.75rem;
 	text-transform: uppercase;
 	transition: all ease 0.3s;
