@@ -41,11 +41,11 @@ form {
 }
 
 label {
-	// font-family: blenny, sans-serif;
+	font-family: blenny, sans-serif;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	margin-bottom: 10px;
 	flex-basis: 100%;
 	cursor: url(./../images/fish-cursor.png) 32 32, auto;
@@ -54,28 +54,14 @@ label {
 		margin: 20px 0;
 	}
 
-	// @media only all and (min-width: 768px) {
-	// 	&:nth-of-type(1),
-	// 	&:nth-of-type(2) {
-	// 		flex-basis: 100%;
-	// 	}
-	// 	&:nth-of-type(3),
-	// 	&:nth-of-type(4),
-	// 	&:nth-of-type(5),
-	// 	&:nth-of-type(6) {
-	// 		flex-basis: calc(50% - 20px);
-	// 	}
-	
-	// 	&:nth-of-type(3),
-	// 	&:nth-of-type(5) {
-	// 		margin-right: 5px;
-	// 	}
-	
-	// 	&:nth-of-type(4),
-	// 	&:nth-of-type(6) {
-	// 		margin-left: 5px;
-	// 	}
-	// }
+	@media only all and (min-width: 768px) {
+		flex-basis: 100%;
+
+		&:nth-of-type(1),
+		&:nth-of-type(2) {
+			flex-basis: calc(50% - 20px);
+		}
+	}
 }
 
 .form_header {
