@@ -41,11 +41,14 @@ form {
 }
 
 label {
-	// font-family: blenny, sans-serif;
+	font-weight: bold;
+  font-family: new-order, serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	font-size: 1.6rem;
 	margin-bottom: 10px;
 	flex-basis: 100%;
 
