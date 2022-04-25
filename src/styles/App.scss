@@ -40,24 +40,24 @@ form {
 	margin: 0 auto;
 }
 
-// label {
-// 	font-family: blenny, sans-serif;
-// 	position: relative;
-// 	display: flex;
-// 	flex-direction: column;
-// 	font-size: 1.6rem;
-// 	margin-bottom: 10px;
-// 	flex-basis: 100%;
+label {
+	// font-family: blenny, sans-serif;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.6rem;
+	margin-bottom: 10px;
+	flex-basis: 100%;
 
-// 	@media only all and (min-width: 768px) {
-// 		flex-basis: 100%;
+	@media only all and (min-width: 768px) {
+		flex-basis: 100%;
 
-// 		&:nth-of-type(1),
-// 		&:nth-of-type(2) {
-// 			flex-basis: calc(50% - 20px);
-// 		}
-// 	}
-// }
+		&:nth-of-type(1),
+		&:nth-of-type(2) {
+			flex-basis: calc(50% - 20px);
+		}
+	}
+}
 
 .form_header {
 	padding: 0;
