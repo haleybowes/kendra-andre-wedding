@@ -78,10 +78,6 @@ label {
 	// }
 }
 
-a {
-	color: $white;
-}
-
 .form_header {
 	padding: 0;
 
@@ -123,7 +119,7 @@ select {
 }
 
 div {
-	margin: 80px 0;
+	margin: 60px 0;
 }
 
 .centered {
@@ -152,13 +148,13 @@ input, select, .submit {
 }
 
 a {
-	color: $black;
+	color: $white;
 	font-weight: 800;
 	text-decoration: none;
 	transition: all ease 0.3s;
 
 	&:hover {
-		color: $white;
+		color: $black;
 	}
 }
 
@@ -214,9 +210,9 @@ $btn-bg: #8BC34A;
 $white: #fefefe;
 
 .button {
-	background: $light-brown;
+	background: $white;
 	color: $black;
-	border-radius: 2px;
+	border-radius: 10px;
 	text-align: center;
 	position: relative;
 	cursor: pointer;
@@ -237,8 +233,8 @@ $white: #fefefe;
 	}
 
 	&:hover {
-		background: $white;
-		color: $black;
+		background: $black;
+		color: $white;
 	}
 
   
