@@ -10,7 +10,7 @@ class Form extends React.Component {
 		super(props);
 		this.state = {
 			attending: '',
-			numberOfGuests: '',
+			nameOfGuests: '',
 			howManyNights: '',
 			fridayDinner: '',
 			foodRestrictions: '',
@@ -36,7 +36,7 @@ class Form extends React.Component {
 	handleSubmit(e) {
 		const {
 			attending,
-			numberOfGuests,
+			nameOfGuests,
 			howManyNights,
 			fridayDinner,
 			foodRestrictions,
@@ -52,7 +52,7 @@ class Form extends React.Component {
 			responseType: 'json',
 			params: {
 				attending,
-				numberOfGuests,
+				nameOfGuests,
 				howManyNights,
 				fridayDinner,
 				foodRestrictions,
@@ -103,12 +103,12 @@ class Form extends React.Component {
 								defaultValue=""
 							>
 								<option value="" disabled hidden></option>
-								<option value="yes">Yes</option>
-								<option value="no">No</option>
+								<option value="yes">Yes, can't wait!</option>
+								<option value="no">No, sadly cannot make it</option>
 							</select>
 						</label>
-						<label>If yes, how many will you be?
-							<input name="numberOfGuests" type="text" value={value} onChange={this.handleInputChange} />
+						<label>If yes, name of attending guests
+							<input name="nameOfGuests" type="text" value={value} onChange={this.handleInputChange} />
 						</label>
 						<label>How many nights will you be with us?
 							<select
@@ -150,7 +150,7 @@ class Form extends React.Component {
 						</label>
 						{
 							error &&
-							<p>Oops! Something went wrong while you were submitting the form. Please try again or send an email to <strong>sayhi@kendraandandre.com</strong>.</p>
+							<p>Oops! Something went wrong while you were submitting the form. Please try again or send an email to <span>kendrabramsonbowes@gmail.com</span> or <span>andremarcelbaril@gmail.com</span>.</p>
 						}
 						<div className="animate submit">
 							{
